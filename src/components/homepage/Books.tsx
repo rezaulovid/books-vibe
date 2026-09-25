@@ -15,7 +15,8 @@ const getBooks = async () => {
     return [];
   }
 };
-
+const Books=async () => {
+ const booksData = await getBooks();
   return (
     <section className="container mx-auto my-[70px] px-4">
 
