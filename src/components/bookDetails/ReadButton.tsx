@@ -14,10 +14,11 @@ console.log(BooksProvider, "booksProvider");
     console.log("read boook btn triggered", book);
 
 setReadBooks([...readBooks,book]);
-toast.success('You have read "${bookName}"'  );
+toast.success('You have read "${bookName}"is already in your wishlist'  );
    }
     return (
-      <button className="btn btn-primary flex-1 " onClick={() => handleReadBook () } > Read</button>
+      <button className="btn btn-primary flex-1 " onClick={() =>
+         handleReadBook () } > Read</button>
     );
 };
 

@@ -13,8 +13,13 @@ const WishlistButton = ({ book }: { book: IBook }) => {
 
     setWishlist([...wishlist, book]);
 
-    toast.success(`You have added "${book.bookName}" to your wishlist`);
+    toast.success(`You have added "${book.bookName}"to your wishlist`);
+
+       setReadBooks([...readBooks,book]);
+       toast.success('You have read "${bookName}"'  );
   };
+
+
 
   return (
     <button

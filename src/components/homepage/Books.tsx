@@ -6,7 +6,7 @@ import BookCard from "./BookCard";
 const getBooks = async () => {
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`,
+      "http://localhost:3000/booksData.json",
     );
     const data = await response.json();
     return data;
